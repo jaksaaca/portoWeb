@@ -18,3 +18,17 @@ var typed = new Typed(".input", {
   backSpeed: 50,
   loop: true,
 });
+
+const scriptURL =
+  "https://script.google.com/macros/s/AKfycbzfRRDm2iW-0XhqUzWOCALdH2lCTx6Oy4BzRQZnvd4G5sHqQur48iGMdgmsK_4m4eWo9g/exec";
+const form = document.forms["submit-to-google-sheet"];
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+  fetch(scriptURL, { method: "POST", body: new FormData(form) })
+    .then((response) => {
+      form.reset();
+      console.log("Success!", response);
+    })
+    .catch((error) => console.error("Error!", error.message));
+});

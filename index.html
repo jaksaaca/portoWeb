@@ -327,20 +327,6 @@
         <div class="wave" id="wave4"></div>
       </div>
     </footer>
-    <script>
-      const scriptURL = 'https://script.google.com/macros/s/AKfycbzfRRDm2iW-0XhqUzWOCALdH2lCTx6Oy4BzRQZnvd4G5sHqQur48iGMdgmsK_4m4eWo9g/exec'
-      const form = document.forms['submit-to-google-sheet']
-    
-      form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-          .then((response) => {
-            form.reset();
-            console.log('Success!', response);
-      })
-          .catch(error => console.error('Error!', error.message))
-      })
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="script.js"></script>
   </body>
