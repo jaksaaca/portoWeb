@@ -225,14 +225,15 @@ nav a:hover::before {
 
 .hero-left .hero-button {
   display: inline-block;
-  color: var(--primaryIconColor);
+  color: var(--primaryTextColor);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: var(--primaryIconColor) 2px solid;
+  border: var(--primaryTextColor) 2px solid;
 }
 
 .hero-left .hero-button:hover {
-  color: var(--primaryIconColorHover);
+  color: var(--primaryIconColor);
+  border: var(--primaryIconColor) 2px solid;
   background-color: var(--thirdBackgroundColor);
   transition: 0.5s;
 }
