@@ -225,14 +225,15 @@ nav a:hover::before {
 
 .hero-left .hero-button {
   display: inline-block;
-  background-color: var(--primaryIconColor);
-  color: var(--primaryBackgroundColor);
+  color: var(--primaryIconColor);
   padding: 1rem;
   border-radius: 0.5rem;
+  border: var(--primaryIconColor) 2px solid;
 }
 
 .hero-left .hero-button:hover {
-  background-color: var(--primaryIconColorHover);
+  color: var(--primaryIconColorHover);
+  background-color: var(--thirdBackgroundColor);
   transition: 0.5s;
 }
 
@@ -372,6 +373,7 @@ nav a:hover::before {
 
 .portfolio-info {
   padding: 2rem 1.5rem;
+  text-align: justify;
 }
 
 .portfolio-title {
@@ -402,13 +404,25 @@ nav a:hover::before {
 
 .porto-button {
   padding: 1rem;
-  background-color: var(--primaryIconColorHover);
+  background-color: grey;
   width: fit-content;
   border-radius: 1rem;
   margin-top: 1rem;
 }
 
 .porto-button a {
+  color: var(--primaryBackgroundColor);
+}
+
+.porto-button-on {
+  padding: 1rem;
+  background-color: var(--primaryIconColorHover);
+  width: fit-content;
+  border-radius: 1rem;
+  margin-top: 1rem;
+}
+
+.porto-button-on a {
   color: var(--primaryBackgroundColor);
 }
 
@@ -467,8 +481,9 @@ nav a:hover::before {
   display: inline-block;
   background-color: var(--primaryIconColor);
   color: var(--primaryBackgroundColor);
-  padding: 1rem;
+  padding: 1.3rem;
   border-radius: 0.5rem;
+  border: none;
 }
 
 .contact-button:hover {
