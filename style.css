@@ -11,6 +11,7 @@
   --primaryIconColorHover: #5d51e8;
 
   --sectionPadding: 6rem 0;
+  --lineColor: #d9d9d9;
 }
 
 * {
@@ -225,15 +226,15 @@ nav a:hover::before {
 
 .hero-left .hero-button {
   display: inline-block;
-  color: var(--primaryTextColor);
+  color: var(--primaryIconColor);
   padding: 1rem;
   border-radius: 0.5rem;
-  border: var(--primaryTextColor) 2px solid;
+  border: var(--primaryIconColor) 2px solid;
 }
 
 .hero-left .hero-button:hover {
-  color: var(--primaryIconColor);
-  border: var(--primaryIconColor) 2px solid;
+  color: var(--primaryTextColor);
+  border: var(--primaryTextColor) 2px solid;
   background-color: var(--thirdBackgroundColor);
   transition: 0.5s;
 }
@@ -243,12 +244,6 @@ nav a:hover::before {
   border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
   box-shadow: 0px 20px 30px -10px var(--primaryTextColor);
   object-fit: cover;
-  transition: 0.5s;
-}
-
-.hero-right img:hover {
-  transform: scale(1.1);
-  box-shadow: none;
 }
 
 .hero-right {
@@ -409,10 +404,8 @@ nav a:hover::before {
   width: fit-content;
   border-radius: 1rem;
   margin-top: 1rem;
-}
-
-.porto-button a {
   color: var(--primaryBackgroundColor);
+  letter-spacing: 0.5px;
 }
 
 .porto-button-on {
@@ -421,6 +414,7 @@ nav a:hover::before {
   width: fit-content;
   border-radius: 1rem;
   margin-top: 1rem;
+  letter-spacing: 0.5px;
 }
 
 .porto-button-on a {
