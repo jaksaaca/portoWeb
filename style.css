@@ -127,10 +127,12 @@ nav ul {
 .logo {
   display: flex;
   align-items: center;
+  font-weight: 700;
+  font-size: 2rem;
 }
 
-.logo img {
-  width: 7rem;
+.logo a {
+  color: var(--primaryTextColor);
 }
 
 nav ul li {
