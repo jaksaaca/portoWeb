@@ -13,9 +13,9 @@ const navSlide = () => {
 navSlide();
 
 var typed = new Typed(".input", {
-  strings: ["Mobile Apps Developer", "Front-End Developer"],
+  strings: ["Web Developer"],
   typedSpeed: 10,
-  backSpeed: 50,
+  backSpeed: 80,
   loop: true,
 });
 
