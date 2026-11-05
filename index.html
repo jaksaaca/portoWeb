@@ -1,332 +1,796 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio of Jaksa Setia Alam, an Informatics graduate from Universitas Nasional focused on web development, system testing, and creative strategy."
+    />
+    <link rel="icon" type="image/png" href="img/logonav.png" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
-    <title>superAcz</title>
+    <title>Jaksa Setia Alam | Web Developer</title>
   </head>
   <body>
     <header>
       <div class="main-container">
         <div class="nav">
           <div class="logo">
-            <a href="/">superAcz</a>
+            <a href="#hero">superAcz</a>
           </div>
-          <nav>
+          <nav id="primary-nav" aria-label="Main navigation">
             <ul>
               <li><a href="#hero">Home</a></li>
               <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#certifications">Certifications</a></li>
               <li><a href="#project">Project</a></li>
               <li><a href="#contact">Contact</a></li>
             </ul>
           </nav>
-          <div class="burger">
-            <div class="line-1"></div>
-            <div class="line-2"></div>
-            <div class="line-3"></div>
-          </div>
+          <button
+            type="button"
+            class="burger"
+            aria-label="Open menu"
+            aria-expanded="false"
+            aria-controls="primary-nav"
+          >
+            <span class="line-1"></span>
+            <span class="line-2"></span>
+            <span class="line-3"></span>
+          </button>
         </div>
+
         <section id="hero">
           <div class="hero-social">
             <div class="social">
-              <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=jaksasetiaalam14@gmail.com" target="_blank"
-                ><i class="fa-regular fa-envelope"></i
+              <a
+                href="https://mail.google.com/mail/u/0/?view=cm&amp;tf=1&amp;fs=1&amp;to=jaksasetiaalam14@gmail.com"
+                target="_blank"
+                aria-label="Email Jaksa Setia Alam"
+                ><i class="fa-regular fa-envelope" aria-hidden="true"></i
               ></a>
               <a
                 href="https://www.linkedin.com/in/jaksasetiaalam/"
                 target="_blank"
-                ><i class="fa-brands fa-linkedin"></i
+                aria-label="Jaksa Setia Alam on LinkedIn"
+                ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
               ></a>
-              <a href="https://github.com/jaksaaca" target="_blank">
-                <i class="fa-brands fa-github"></i></a>
-              <a href="https://www.instagram.com/jaksaaca/" target="_blank"
-                ><i class="fa-brands fa-instagram"></i
+              <a
+                href="https://github.com/jaksaaca"
+                target="_blank"
+                aria-label="Jaksa Setia Alam on GitHub"
+                ><i class="fa-brands fa-github" aria-hidden="true"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/jaksaaca/"
+                target="_blank"
+                aria-label="Jaksa Setia Alam on Instagram"
+                ><i class="fa-brands fa-instagram" aria-hidden="true"></i
               ></a>
             </div>
           </div>
           <div class="hero-left">
-            <h3 class="pre-title">My name is</h3>
+            <h3 class="pre-title">Hello, I'm</h3>
             <h1 class="hero-name">Jaksa Setia Alam</h1>
-            <h1 class="section-title"><span class="input"></span></h1>
-            <a href="CV-Jaksa-Setia-Alam.pdf" target="_blank" class="hero-button"
+            <h2 class="section-title hero-role"><span class="input"></span></h2>
+            <a
+              href="CV-Jaksa-Setia-Alam.pdf"
+              target="_blank"
+              class="hero-button"
               >Download CV &nbsp;
-              <i class="fa fa-download" aria-hidden="true"></i>
+              <i class="fa-solid fa-download" aria-hidden="true"></i>
             </a>
           </div>
           <div class="hero-right">
-            <img src="/img/main.png" />
+            <img src="img/main.png" alt="Portrait of Jaksa Setia Alam" />
           </div>
         </section>
       </div>
     </header>
+
     <section id="about">
-      <div class="about main-container">
+      <div class="main-container">
+        <h3 class="pre-title">About Me</h3>
+        <h2 class="section-title">Introduction</h2>
         <div class="about-grid">
-          <div class="about-left">
-            <img src="/img/aboutpic.jpg" class="card-img" />
-          </div>
-          <div class="about-right">
-            <h3 class="pre-title">About Me</h3>
-            <h1 class="section-title">Introduction</h1>
-            <p>
-              My name is Jaksa Setia Alam, and I am an Informatics
-              student at Universitas Nasional. I have a passion for programming
-              with a strong interest in web
-              development. I have hands-on experience as a Full-Stack Developer Intern. I am open to opportunities for internships, projects,
-              and volunteering.
+          <div>
+            <h3 class="about-card-title">Profile</h3>
+            <p class="about-text">
+              An Informatics graduate from Universitas Nasional with a GPA of
+              3.84 and a strong interest and experience in software development,
+              system testing, and information technology. Experienced in
+              developing responsive web applications, API integration, and
+              functional website testing. Independently developed a real-time
+              web-based monitoring application integrated with Machine Learning
+              and Firebase. Has additional experience in creative strategy and
+              digital operations that supports analytical, problem-solving, and
+              cross-team collaboration skills.
             </p>
-            <div class="skills-list">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>PHP</li>
-              </ul>
-              <ul>
-                <li>JavaScript</li>
-                <li>Laravel</li>
-                <li>Next.js</li>
-              </ul>
-            </div>
           </div>
-        </div>
-      </div>
-      <div class="education-section main-container">
-        <div class="education-text">
-          <h1 class="section-title">Education</h1>
-          <p>My personal journey</p>
-        </div>
-        <div class="education-items">
-          <div class="education-item">
-            <div class="timeline-dot"></div>
-            2022-2026
-            <div class="timeline-content">
-              <h3>Universitas Nasional</h3>
-              <p>Bachelor's Degree Program</p>
-              <p>Informatics</p>
-            </div>
-          </div>
-          <div class="education-item">
-            <div class="timeline-dot"></div>
-            2018-2021
-            <div class="timeline-content">
-              <h3>SMK Negeri 54 Jakarta</h3>
-              <p>Vocational High School</p>
-              <p>Automotive</p>
-            </div>
-          </div>
-          <div class="education-item">
-            <div class="timeline-dot"></div>
-            2015-2018
-            <div class="timeline-content">
-              <h3>SMP Negeri 119 Jakarta</h3>
-              <p>Junior High School</p>
-            </div>
-          </div>
-          <div class="education-item">
-            <div class="timeline-dot"></div>
-            2009-2015
-            <div class="timeline-content">
-              <h3>SD Negeri Cempaka Baru 13 Pagi</h3>
-              <p>Elementary School</p>
-            </div>
-          </div>
+          <aside class="about-side" aria-label="Quick facts">
+            <h3 class="about-card-title">Quick Facts</h3>
+            <ul class="about-facts">
+              <li>
+                <i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>
+                <div>
+                  <strong>Bachelor of Informatics</strong>
+                  <span>Universitas Nasional, 2022 - 2026</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
+                <div>
+                  <strong>GPA 3.84</strong>
+                  <span>Graduated with distinction</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+                <div>
+                  <strong>Jakarta, Indonesia</strong>
+                  <span>Open to on-site and remote work</span>
+                </div>
+              </li>
+            </ul>
+          </aside>
         </div>
       </div>
     </section>
+
+    <section id="experience">
+      <div class="main-container">
+        <h3 class="pre-title">Experience</h3>
+        <h2 class="section-title">Career Journey</h2>
+        <div class="experience-items">
+          <article class="experience-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Feb 2026 - Oct 2026</p>
+              <h3>Creative Strategist</h3>
+              <p class="timeline-company">ORBIZ - PT. Borwita Indah</p>
+              <p class="timeline-description">
+                Developed campaign concepts, creative briefs, and live commerce
+                mockups based on KPI analysis (GMV, ERR, CTR, and conversion
+                rate) to optimize engagement and sales on Shopee and TikTok.
+              </p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Nov 2025 - Nov 2026</p>
+              <h3>Live Streaming Operator</h3>
+              <p class="timeline-company">ORBIZ - PT. Borwita Indah</p>
+              <p class="timeline-description">
+                Handled technical live streaming operations using OBS Studio,
+                DSLR cameras, lighting, and audio, and coordinated in real time
+                with hosts and the production team.
+              </p>
+            </div>
+          </article>
+          <article class="experience-item">
+            <div class="timeline-dot" aria-hidden="true"></div>
+            <div class="timeline-content">
+              <p class="timeline-period">Mar 2025 - Aug 2025</p>
+              <h3>Web Developer Intern</h3>
+              <p class="timeline-company">Universitas Siber Asia</p>
+              <p class="timeline-description">
+                Implemented Figma designs into responsive web interfaces for a
+                Learning Management System (LMS), developed event websites with
+                API integration for event data and supporting backend APIs, and
+                conducted functional testing, design accuracy checks, and
+                responsiveness testing across multiple devices.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="certifications">
+      <div class="main-container">
+        <h3 class="pre-title">Certifications</h3>
+        <h2 class="section-title">Certifications &amp; Training</h2>
+        <div class="cert-grid">
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Pengembang Web Pratama certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/pengembang-web-pratama.jpg"
+                alt="Pengembang Web Pratama certificate from LSP Informatika"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Pengembang Web Pratama</h3>
+              <p class="cert-issuer">BNSP - LSP Informatika</p>
+              <p class="cert-date">Jul 2026</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge IT Specialist - Software Development certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/it-specialist-software-development.jpg"
+                alt="IT Specialist - Software Development certificate from Certiport"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>IT Specialist - Software Development</h3>
+              <p class="cert-issuer">Certiport</p>
+              <p class="cert-date">May 2026</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Google Cloud Data Analytics Certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/google-cloud-data-analytics.jpg"
+                alt="Google Cloud Data Analytics Certificate from Google"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Google Cloud Data Analytics Certificate</h3>
+              <p class="cert-issuer">Google</p>
+              <p class="cert-date">Aug 2025</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Google Cloud Computing Foundations Certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/google-cloud-computing-foundations.jpg"
+                alt="Google Cloud Computing Foundations Certificate from Google"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Google Cloud Computing Foundations Certificate</h3>
+              <p class="cert-issuer">Google</p>
+              <p class="cert-date">Jun 2025</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Belajar Membuat Aplikasi Flutter untuk Pemula certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/dicoding-flutter-pemula.jpg"
+                alt="Belajar Membuat Aplikasi Flutter untuk Pemula certificate from Dicoding Indonesia"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Belajar Membuat Aplikasi Flutter untuk Pemula</h3>
+              <p class="cert-issuer">Dicoding Indonesia</p>
+              <p class="cert-date">Jan 2025</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Flutter for Designer: Design to Code certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/buildwithangga-flutter-designer.jpg"
+                alt="Flutter for Designer: Design to Code certificate from BuildWithAngga"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Flutter for Designer: Design to Code</h3>
+              <p class="cert-issuer">BuildWithAngga</p>
+              <p class="cert-date">Jan 2025</p>
+            </div>
+          </article>
+
+          <article class="cert-card">
+            <button
+              type="button"
+              class="media-frame ratio-4-3"
+              data-lightbox
+              aria-label="Enlarge Memulai Pemrograman dengan Dart certificate"
+            >
+              <span class="media-placeholder" aria-hidden="true"
+                ><i class="fa-solid fa-certificate"></i
+              ></span>
+              <img
+                src="img/sertifikat/dicoding-dart.jpg"
+                alt="Memulai Pemrograman dengan Dart certificate from Dicoding Indonesia"
+                loading="lazy"
+              />
+            </button>
+            <div class="cert-info">
+              <h3>Memulai Pemrograman dengan Dart</h3>
+              <p class="cert-issuer">Dicoding Indonesia</p>
+              <p class="cert-date">Jan 2025</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="project">
-      <div class="project main-container">
-        <h3 class="pre-title">My Project</h3>
-        <h1 class="section-title">Recently Portfolios</h1>
-        <div class="grid-3">
-          <div class="portfolio">
-            <div class="portfolio-cover">
-              <img src="img/porto.jpeg" />
+      <div class="main-container">
+        <h3 class="pre-title">Portfolio</h3>
+        <h2 class="section-title">Project</h2>
+
+        <div class="project-group">
+          <h3 class="subsection-title">Programming</h3>
+          <article class="project-card">
+            <div class="project-gallery">
+              <button
+                type="button"
+                class="media-frame ratio-16-9"
+                data-lightbox
+                aria-label="Enlarge AI Host Monitoring System photo 1"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/project/ai-monitoring-1.jpg"
+                  alt="AI Host Monitoring System operator dashboard"
+                  loading="lazy"
+                />
+              </button>
+              <button
+                type="button"
+                class="media-frame ratio-16-9"
+                data-lightbox
+                aria-label="Enlarge AI Host Monitoring System photo 2"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/project/ai-monitoring-2.jpg"
+                  alt="AI Host Monitoring System studio monitoring view"
+                  loading="lazy"
+                />
+              </button>
+              <button
+                type="button"
+                class="media-frame ratio-16-9"
+                data-lightbox
+                aria-label="Enlarge AI Host Monitoring System photo 3"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/project/ai-monitoring-3.jpg"
+                  alt="AI Host Monitoring System analytics view"
+                  loading="lazy"
+                />
+              </button>
             </div>
-            <div class="portfolio-info">
-              <div class="portfolio-title">
-                <h4>Website Portofolio</h4>
+            <div class="project-info">
+              <div class="project-title">
+                <h4>AI Host Monitoring System</h4>
+                <p class="project-period">Jun 2026 - Aug 2026</p>
               </div>
               <div class="portfolio-tags">
-                <div>HTML</div>
-                <div>CSS</div>
-                <div>Javascript</div>
+                <div>JavaScript</div>
+                <div>Firebase</div>
+                <div>Firestore</div>
+                <div>Realtime Database</div>
+                <div>MediaPipe</div>
+                <div>ONNX Runtime Web</div>
+                <div>Web Audio API</div>
               </div>
-              <p>
-                A website portfolio showcasing profile and projects, built with
-                HTML, CSS, and JavaScript for a responsive and visually
-                appealing design.
-              </p>
-              <div class="porto-button-on">
-                <a href="https://github.com/jaksaaca/portoWeb" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
-              </div>
+              <ul class="project-list">
+                <li>
+                  Built a web application for monitoring hosts and studios
+                  across branches with operator, admin, and superadmin
+                  interfaces and real-time studio status monitoring.
+                </li>
+                <li>
+                  Integrated ML models through MediaPipe and ONNX Runtime Web
+                  for face detection and head pose classification, and
+                  implemented voice activity detection using the Web Audio API.
+                </li>
+                <li>
+                  Designed data flows in Firestore and Realtime Database for
+                  Excel schedules, studio coordination, session logging,
+                  analytics dashboards, and CSV export.
+                </li>
+              </ul>
+              <span
+                class="porto-button porto-button-disabled"
+                aria-disabled="true"
+                >Link coming soon</span
+              >
             </div>
-          </div>
-          <div class="portfolio">
-            <div class="portfolio-cover">
-              <img src="img/crudflutter.jpg" />
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-title">
-                <h4>Basic Flutter CRUD</h4>
-              </div>
-              <div class="portfolio-tags">
-                <div>Dart</div>
-                <div>Flutter</div>
-                <div>SQFLite</div>
-              </div>
-              <p>
-                A simple application with CRUD functionality, developed using
-                Flutter and SQFLite for efficient data management.
-              </p>
-              <div class="porto-button">
-                <i class="fa-brands fa-github"></i> Github
-              </div>
-            </div>
-          </div>
-          <div class="portfolio">
-            <div class="portfolio-cover">
-              <img src="img/tapit.jpg" />
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-title">
-                <h4>Tap It!</h4>
-              </div>
-              <div class="portfolio-tags">
-                <div>Dart</div>
-                <div>Flutter</div>
-              </div>
-              <p>
-                An exciting Flutter-based game that tests players speed by
-                tracking the highest score within 1 minute.
-              </p>
-              <div class="porto-button">
-                <i class="fa-brands fa-github"></i> Github
-              </div>
-            </div>
+          </article>
+        </div>
+
+        <div class="project-group">
+          <h3 class="subsection-title">Live Commerce</h3>
+          <p class="live-intro">
+            Live shopping mockups I designed for various brands on Shopee and
+            TikTok.
+          </p>
+          <div class="live-grid">
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Unilever Food Solutions live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-1.jpg"
+                  alt="Unilever Food Solutions live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Unilever Food Solutions</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Quaker live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-2.jpg"
+                  alt="Quaker live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Quaker</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Schick Intuition live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-3.jpg"
+                  alt="Schick Intuition live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Schick Intuition</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Banana Boat live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-4.jpg"
+                  alt="Banana Boat live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Banana Boat</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Astra Otoshop live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-5.jpg"
+                  alt="Astra Otoshop live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Astra Otoshop</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Nutrimart live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-6.jpg"
+                  alt="Nutrimart live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Nutrimart</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge Plossa live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-7.jpg"
+                  alt="Plossa live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>Plossa</h4>
+            </article>
+
+            <article class="live-card">
+              <button
+                type="button"
+                class="media-frame ratio-9-16"
+                data-lightbox
+                aria-label="Enlarge EVI Group live commerce mockup"
+              >
+                <span class="media-placeholder" aria-hidden="true"
+                  ><i class="fa-solid fa-image"></i
+                ></span>
+                <img
+                  src="img/live-commerce/brand-8.jpg"
+                  alt="EVI Group live commerce mockup"
+                  loading="lazy"
+                />
+              </button>
+              <h4>EVI Group</h4>
+            </article>
           </div>
         </div>
       </div>
     </section>
+
     <section id="contact">
-      <div class="contact main-container">
+      <div class="main-container">
         <h3 class="pre-title">Contact Me</h3>
-        <h1 class="section-title">Let's Work Together</h1>
+        <h2 class="section-title">Let's Work Together</h2>
         <div class="contact-grid">
           <div class="contact-left">
             <div class="contact__information">
-              <i class="fa-regular fa-envelope contact_icon"></i>
+              <i
+                class="fa-regular fa-envelope contact_icon"
+                aria-hidden="true"
+              ></i>
               <div>
                 <h3>Email</h3>
                 <p>jaksasetiaalam14@gmail.com</p>
               </div>
             </div>
             <div class="contact__information">
-              <i class="fa-brands fa-linkedin contact_icon"></i>
+              <i
+                class="fa-brands fa-linkedin contact_icon"
+                aria-hidden="true"
+              ></i>
               <div>
-                <h3>Linkedin</h3>
+                <h3>LinkedIn</h3>
                 <p>Jaksa Setia Alam</p>
               </div>
             </div>
             <div class="contact__information">
-              <i class="fa-brands fa-instagram contact_icon"></i>
+              <i
+                class="fa-brands fa-instagram contact_icon"
+                aria-hidden="true"
+              ></i>
               <div>
                 <h3>Instagram</h3>
                 <p>@jaksaaca</p>
               </div>
             </div>
             <div class="contact__information">
-              <i class="fa fa-globe contact_icon"></i>
+              <i class="fa-solid fa-globe contact_icon" aria-hidden="true"></i>
               <div>
                 <h3>Website</h3>
                 <p>superAcz.vercel.app</p>
               </div>
             </div>
           </div>
-          <div class="contact-form">
+          <div>
             <form name="submit-to-google-sheet">
-            <div class="contact__inputs grid">
-              <div class="contact__content">
-                <label for="Name" class="contact__label">First Name</label>
-                <input
-                  type="text"
-                  name="first-name"
-                  class="contact__input"
-                  required
-                />
+              <div class="contact__inputs">
+                <div class="contact__content">
+                  <label for="first-name" class="contact__label"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first-name"
+                    class="contact__input"
+                    required
+                  />
+                </div>
+                <div class="contact__content">
+                  <label for="last-name" class="contact__label"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last-name"
+                    class="contact__input"
+                    required
+                  />
+                </div>
               </div>
               <div class="contact__content">
-                <label for="Email" class="contact__label">Last Name</label>
-                <input
-                  type="text"
-                  name="last-name"
-                  class="contact__input"
-                  required
-                />
-              </div>
-            </div>
-              <div class="contact__content">
-                <label for="Email" class="contact__label">Email</label>
+                <label for="email" class="contact__label">Email</label>
                 <input
                   type="email"
+                  id="email"
                   name="email"
                   class="contact__input"
                   required
                 />
               </div>
-            <div class="contact__content">
-              <label for="Message" class="contact__label">Message</label>
-              <textarea
-                name="message"
-                cols="0"
-                rows="7"
-                class="contact__input"
-                required
-              ></textarea>
-            </div>
-            <div>
-              <button type="submit" class="contact-button">
-                Send Message &nbsp;
-                <i class="fa fa-play" aria-hidden="true"></i>
-              </button>
-            </div>
+              <div class="contact__content">
+                <label for="message" class="contact__label">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="0"
+                  rows="7"
+                  class="contact__input"
+                  required
+                ></textarea>
+              </div>
+              <div class="contact__actions">
+                <button type="submit" class="contact-button">
+                  Send Message &nbsp;
+                  <i class="fa-solid fa-paper-plane" aria-hidden="true"></i>
+                </button>
+                <p class="form-status" role="status" aria-live="polite"></p>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </section>
+
     <footer>
       <ul class="social">
         <li>
-          <a href="https://mail.google.com/mail/u/0/?view=cm&tf=1&fs=1&to=jaksasetiaalam14@gmail.com"><i class="fa-regular fa-envelope"></i></a>
+          <a
+            href="https://mail.google.com/mail/u/0/?view=cm&amp;tf=1&amp;fs=1&amp;to=jaksasetiaalam14@gmail.com"
+            target="_blank"
+            aria-label="Email Jaksa Setia Alam"
+            ><i class="fa-regular fa-envelope" aria-hidden="true"></i
+          ></a>
         </li>
         <li>
-          <a href="https://www.linkedin.com/in/jaksasetiaalam/"><i class="fa-brands fa-linkedin"></i></a>
+          <a
+            href="https://www.linkedin.com/in/jaksasetiaalam/"
+            target="_blank"
+            aria-label="Jaksa Setia Alam on LinkedIn"
+            ><i class="fa-brands fa-linkedin" aria-hidden="true"></i
+          ></a>
         </li>
         <li>
-          <a href="https://github.com/jaksaaca"><i class="fa-brands fa-github"></i></a>
+          <a
+            href="https://github.com/jaksaaca"
+            target="_blank"
+            aria-label="Jaksa Setia Alam on GitHub"
+            ><i class="fa-brands fa-github" aria-hidden="true"></i
+          ></a>
         </li>
         <li>
-          <a href="https://www.instagram.com/jaksaaca/"><i class="fa-brands fa-instagram"></i></a>
+          <a
+            href="https://www.instagram.com/jaksaaca/"
+            target="_blank"
+            aria-label="Jaksa Setia Alam on Instagram"
+            ><i class="fa-brands fa-instagram" aria-hidden="true"></i
+          ></a>
         </li>
       </ul>
-      <ul class="footer-menu">
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#project">Project</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-menu">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
       <p>Created by Jaksa Setia Alam</p>
-      <div class="waves">
-        <div class="wave" id="wave1"></div>
-        <div class="wave" id="wave2"></div>
-        <div class="wave" id="wave3"></div>
-        <div class="wave" id="wave4"></div>
-      </div>
+      <div class="wave" id="wave1"></div>
+      <div class="wave" id="wave2"></div>
+      <div class="wave" id="wave3"></div>
+      <div class="wave" id="wave4"></div>
     </footer>
+
+    <div
+      class="lightbox"
+      id="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image preview"
+      hidden
+    >
+      <button type="button" class="lightbox-close" aria-label="Close preview">
+        <i class="fa-solid fa-xmark" aria-hidden="true"></i>
+      </button>
+      <img class="lightbox-image" alt="Image preview" loading="lazy" />
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
     <script src="script.js"></script>
   </body>
